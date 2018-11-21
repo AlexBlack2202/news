@@ -92,7 +92,7 @@
                <button id='clickhere'>Click here</button>
             </div>
             </div>
-            <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+          
             <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
             <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
             <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
@@ -113,10 +113,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script type='text/javascript'>
+		function addhttp(url) {
+   if (!/^(f|ht)tps?:\/\//i.test(url)) {
+      url = "http://" + url;
+   }
+   return url;
+}
         $('#clickhere').click(function(){
 var url_string =window.location.href;
 var url = new URL(url_string);
 var c = url.searchParams.get("c");
+c = addhttp(c);
 window.location.href =c;
         });
             </script>
