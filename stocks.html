@@ -8,10 +8,10 @@ var dataPoints = [];
 
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
-	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	theme: "dark2", // "light1", "light2", "dark1", "dark2"
 	exportEnabled: true,
 	title: {
-		text: "Netflix Stock Price in 2016"
+		text: "MWG"
 	},
 	subtitles: [{
 		text: "Weekly Averages"
@@ -22,7 +22,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	},
 	axisY: {
 		includeZero: false,
-		prefix: "$",
+		prefix: "d",
 		title: "Price"
 	},
 	toolTip: {
