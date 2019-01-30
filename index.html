@@ -6,7 +6,6 @@
     <style>
 body {
     background: #f7f7f7;
-    color: var(--color-dark-0);
     font-family: 'Roboto',sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -53,7 +52,6 @@ div.news-content{
 }
 
 li.news-item{
-    border-top: 1px solid rgba(0,0,0,.125);
     border-bottom: 1px solid rgba(0,0,0,.125);
     padding: 24px;
 }
@@ -106,7 +104,9 @@ svg.color-light{
                 <li class="nav-item active">
                     <a class="nav-link active" href="#"  style="font-size:19px;">Tin tức</a>
                 </li>
-
+ <li class="nav-item active">
+                    <a class="nav-link active" href="#"  style="font-size:19px;">Chứng khoán</a>
+                </li>
             </ul>
 
         </div>
@@ -315,7 +315,7 @@ Kinh Doanh </span></a>
     <script type="text/javascript"  data-cfasync="false">
         $(document).ready(function(){
             function getcontent(file_name){
-$("#news-contents").html();
+$("#news-contents").html('');
                 if(file_name === null || file_name ==='' || file_name==='undefined'|| file_name===undefined){
                     file_name="trangchu.json";
                 }
