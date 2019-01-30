@@ -319,7 +319,7 @@ $("#news-contents").html();
                 if(file_name === null || file_name ==='' || file_name==='undefined'|| file_name===undefined){
                     file_name="trangchu.json";
                 }
-                $.getJSON("news/"+file_name, function(data) {
+                $.getJSON("news_data/"+file_name, function(data) {
                     $.each(data.items, function(i, f) {
                         let head = f.head;
                         let img = f.img;
