@@ -1,0 +1,11 @@
+.nav-link{
+color: #fff;
+}
+
+.nav-link:hover{
+color: #ffb174;
+}
+
+svg.color-light{
+	fill:hsla(0,0%,100%,1);
+}
