@@ -1,45 +1,344 @@
+<!DOCTYPE HTML>
+ <html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <!DOCTYPE HTML>
-            <html>
-            <head>
-            <script type="application/ld+json">
-                {
-                    "articleSection" : "",
-                    "name" : "Phạm Duy Tùng blog",
-                    "headline" : "Phạm Duy Tùng blog",
-                    "description" : "",
-                    "inLanguage" : "en",
-                    "author" : "Phạm Duy Tùng",
-                    "keywords" : [ "News" ]
+    <style>
+body {
+    background: #f7f7f7;
+    color: var(--color-dark-0);
+    font-family: 'Roboto',sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+div.img-news {
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 252px;
+    max-height: 156px;
+}
+
+img.img-news {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 156px;
+}
+
+div.news-content{
+   
+    margin-left: 277px;
+    color:black;
+}
+
+li.news-item{
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 24px;
+}
+
+a,a:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.news-tittle{
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: 700;
+    color:black;
+}
+
+a.adv{
+    padding: 11px;
+    display: block;
+}
+
+div.adv{
+    background-color: #eee;
+}
+
+.nav-link{
+color: #fff;
+}
+
+.nav-link:hover{
+color: #ffb174;
+}
+
+svg.color-light{
+	fill:hsla(0,0%,100%,1);
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-danger fixed-top"
+        style="background: #8c0014;color: hsla(0,0%,100%,1);">
+        <img
+            src="logo.png"
+            alt="Tết tinh tế 2019" width="100" class="jsx-4103438783 imgLogo" style="margin-left:20px;">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size:19px;">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="#"  style="font-size:19px;">Tin tức</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="navbar navbar-expand-md navbar-danger" style="background:
+        #790014;color: hsla(0,0%,100%,1); padding-top:70px">
+        <main class="container">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="position:relative;">
+                            <svg class="color-light" width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M11.143
+                                    4.585L9.194 8.707l-4.361.663c-.782.118-1.096
+                                    1.123-.529 1.7l3.156 3.205-.747
+                                    4.53c-.134.818.693 1.432 1.386 1.049L12
+                                    17.715l3.901 2.139c.693.38 1.52-.23
+                                    1.386-1.05l-.747-4.529
+                                    3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94
+                                    0 0 0-1.713 0z"></path></svg>
+         <span style="position:relative; top:2px;">                 
+home</span>
+</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="position:relative;">
+                            <svg class="color-light" width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M11.143
+                                    4.585L9.194 8.707l-4.361.663c-.782.118-1.096
+                                    1.123-.529 1.7l3.156 3.205-.747
+                                    4.53c-.134.818.693 1.432 1.386 1.049L12
+                                    17.715l3.901 2.139c.693.38 1.52-.23
+                                    1.386-1.05l-.747-4.529
+                                    3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94
+                                    0 0 0-1.713 0z"></path></svg>
+                                     <span style="position:relative; top:2px;">     
+                            Đời Sống </span></a>
+                    </li>
+  <li class="nav-item">
+                        <a class="nav-link" href="#" style="position:relative;">
+                            <svg class="color-light" width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M11.143
+                                    4.585L9.194 8.707l-4.361.663c-.782.118-1.096
+                                    1.123-.529 1.7l3.156 3.205-.747
+                                    4.53c-.134.818.693 1.432 1.386 1.049L12
+                                    17.715l3.901 2.139c.693.38 1.52-.23
+                                    1.386-1.05l-.747-4.529
+                                    3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94
+                                    0 0 0-1.713 0z"></path></svg>
+                            <span style="position:relative; top:2px;">     
+Văn Hoá </span></a>
+</li>
+ <li class="nav-item">
+  <a class="nav-link" href="#" style="position:relative;">
+                            <svg class="color-light" width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M11.143
+                                    4.585L9.194 8.707l-4.361.663c-.782.118-1.096
+                                    1.123-.529 1.7l3.156 3.205-.747
+                                    4.53c-.134.818.693 1.432 1.386 1.049L12
+                                    17.715l3.901 2.139c.693.38 1.52-.23
+                                    1.386-1.05l-.747-4.529
+                                    3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94
+                                    0 0 0-1.713 0z"></path></svg>
+                            <span style="position:relative; top:2px;">     
+Sức Khoẻ </span></a>  </li>
+ <li class="nav-item">
+  <a class="nav-link" href="#" style="position:relative;">
+                            <svg class="color-light" width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M11.143
+                                    4.585L9.194 8.707l-4.361.663c-.782.118-1.096
+                                    1.123-.529 1.7l3.156 3.205-.747
+                                    4.53c-.134.818.693 1.432 1.386 1.049L12
+                                    17.715l3.901 2.139c.693.38 1.52-.23
+                                    1.386-1.05l-.747-4.529
+                                    3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94
+                                    0 0 0-1.713 0z"></path></svg>
+                            <span style="position:relative; top:2px;">     
+Khoa Học </span></a>  </li>
+ <li class="nav-item">
+  <a class="nav-link" href="#" style="position:relative;">
+                            <svg class="color-light" width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M11.143
+                                    4.585L9.194 8.707l-4.361.663c-.782.118-1.096
+                                    1.123-.529 1.7l3.156 3.205-.747
+                                    4.53c-.134.818.693 1.432 1.386 1.049L12
+                                    17.715l3.901 2.139c.693.38 1.52-.23
+                                    1.386-1.05l-.747-4.529
+                                    3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94
+                                    0 0 0-1.713 0z"></path></svg>
+                          <span style="position:relative; top:2px;">       
+Chính Trị Xã Hội </span></a>
+ <li class="nav-item">
+  <a class="nav-link" href="#" style="position:relative;">
+                            <svg class="color-light" width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M11.143
+                                    4.585L9.194 8.707l-4.361.663c-.782.118-1.096
+                                    1.123-.529 1.7l3.156 3.205-.747
+                                    4.53c-.134.818.693 1.432 1.386 1.049L12
+                                    17.715l3.901 2.139c.693.38 1.52-.23
+                                    1.386-1.05l-.747-4.529
+                                    3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94
+                                    0 0 0-1.713 0z"></path></svg>
+               <span style="position:relative; top:2px;">                  
+Vi Tính </span></a>  </li>
+ <li class="nav-item">
+  <a class="nav-link" href="#" style="position:relative;">
+                            <svg class="color-light" width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M11.143
+                                    4.585L9.194 8.707l-4.361.663c-.782.118-1.096
+                                    1.123-.529 1.7l3.156 3.205-.747
+                                    4.53c-.134.818.693 1.432 1.386 1.049L12
+                                    17.715l3.901 2.139c.693.38 1.52-.23
+                                    1.386-1.05l-.747-4.529
+                                    3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94
+                                    0 0 0-1.713 0z"></path></svg>
+                     <span style="position:relative; top:2px;">            
+Thế Giới </span></a>  </li>
+ <li class="nav-item">
+  <a class="nav-link" href="#" style="position:relative;">
+                            <svg class="color-light" width="24" height="24"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M11.143
+                                    4.585L9.194 8.707l-4.361.663c-.782.118-1.096
+                                    1.123-.529 1.7l3.156 3.205-.747
+                                    4.53c-.134.818.693 1.432 1.386 1.049L12
+                                    17.715l3.901 2.139c.693.38 1.52-.23
+                                    1.386-1.05l-.747-4.529
+                                    3.156-3.206c.567-.576.253-1.581-.529-1.7l-4.361-.662-1.95-4.122a.94.94
+                                    0 0 0-1.713 0z"></path></svg>
+                        <span style="position:relative; top:2px;">         
+Kinh Doanh </span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </main>
+    </div>
+
+    <div class="advertisement" style="height:155px; text-align:center;
+        padding-top:10px;">
+        <img
+            src="https://static.accesstrade.vn/publisher/www/files/img_promo/offer/img/nguyenkimvn/nguyenkim_03.01_3.jpg"
+            style="max-height: 135px; margin: auto; max-width: 100%;" alt="">
+    </div>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-3 adv">
+                <a class="pull-left adv" href="/offer/4963260928034750801"><img
+                        style="max-width: 100%;padding-left:0px;"
+                        class="img-responsive"
+                        src="https://static.accesstrade.vn/publisher/www/files/img_promo/offer/img/vntrip/vntrip_01.10_2.png"></a>
+                <a class="pull-left adv" href="/offer/4963260928034750801"><img
+                        style="max-width: 100%;padding-left:0px;"
+                        class="img-responsive"
+                        src="https://static.accesstrade.vn/publisher/www/files/img_promo/offer/img/vntrip/vntrip_01.10_2.png"></a>
+                <a class="pull-left adv" href="/offer/4963260928034750801"><img
+                        style="max-width: 100%;padding-left:0px;"
+                        class="img-responsive"
+                        src="https://static.accesstrade.vn/publisher/www/files/img_promo/offer/img/vntrip/vntrip_01.10_2.png"></a>
+            </div>
+            <div class="col-md-9" style="background-color:white; padding:0;">
+                <ul class="list-unstyled" id="news-contents">
+                    <li class="news-item">
+                        <a href="#" class="text-und">
+                            <div>
+                                <div class="img-news float-left">
+                                    <img class="img-news"
+                                        data-src="holder.js/200x250?theme=thumb"
+                                        alt="Thumbnail [200x250]"
+                                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1689dfff042%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1689dfff042%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.203125%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                        data-holder-rendered="true" />
+                                </div>
+
+                                <div class="news-content">
+                                    <h3 class="news-tittle">
+                                        Tiêu đề
+                                    </h3>
+
+                                    <p class="news-desc">This is a wider card
+                                        with supporting text below as a natural
+                                        lead-in to additional content.</p>
+                                    <div class="news-times">Nov 12</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            function getcontent(file_name){
+$("#news-contents").html();
+                if(file_name === null || file_name ==='' || file_name==='undefined'|| file_name===undefined){
+                    file_name="trangchu.json";
                 }
-                </script>
-            <title>Phạm Duy Tùng blog</title>
-            <meta charset="utf-8" />
-            <meta http-equiv="refresh" content="625" >
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <meta name="generator" content="Hugo 0.41" />
-            <meta name="description" content="Blog ML của Phạm Duy Tùng">
-            <meta name="twitter:card" content="summary" />
-            <meta name="twitter:title" content="Phạm Duy Tùng blog" />
-            <meta name="twitter:description" content="Blog ML của Phạm Duy Tùng" />
-            <meta property="og:title" content="Phạm Duy Tùng blog" />
-            <meta property="og:description" content="Blog ML của Phạm Duy Tùng" />
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content="/" />
-            <meta property="og:image:type" content="image/png">
-            <meta property="og:image:width" content="512">
-            <meta property="og:image:height" content="512">
-            <meta itemprop="name" content="Phạm Duy Tùng blog">
-            <meta itemprop="description" content="Blog ML của Phạm Duy Tùng">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="/css/add-on.css">
-            <link rel="stylesheet" href="/css/academicons.min.css">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+                $.getJSON("news/"+file_name, function(data) {
+                    $.each(data.items, function(i, f) {
+                        let head = f.head;
+                        let img = f.img;
+                        let desc= f.desc;
+                        let times = f.times;
+                        let links = f.links;
+                       var tblRow = "<li class='news-item'> <a href='"+links+"' class='text-und'> <div> <div class='img-news float-left'> <img class='img-news' data-src='holder.js/200x250?theme=thumb' alt='' src='"+img+"' data-holder-rendered='true'/> </div><div class='news-content'> <h3 class='news-tittle'> "+head+" </h3> <p class='news-desc'>"+desc+"</p><div class='news-times'>"+times+"</div></div><div class='clearfix'></div></div></a> </li>";
+                        $(tblRow).appendTo("#news-contents");
+                  });
+             
+                });
+            }
 
-            <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
-            <script type="edd71ee392f14e0fd5253fc8-text/javascript">
+            getcontent();
+        });
+        
+    </script>
+
+     <script type="text/javascript">
             var doNotTrack = false;
             if (!doNotTrack) {
                 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -51,67 +350,5 @@
                 ga('send', 'pageview');
             }
             </script>
-            </head>
-            <body>
-            <div id="wrapper">
-            <header id="header">
-            <h1><a href="/"></a></h1>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">ML Tung</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/"><i class="fa fa-home">&nbsp;</i>Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/news/"><i class="fa fa-list">&nbsp;</i>News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/news/stattag.html"><i class="fa fa-list">&nbsp;</i>Trends</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/news/statalltag.html"><i class="fa fa-list">&nbsp;</i>Daily Trend</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/news/statweb.html"><i class="fa fa-list">&nbsp;</i>Webs</a>
-                </li>
-                
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-            </nav>
-            </header>
-            <div class="container">
-<span>Last update: 2019-01-11 11:06:37</span><div class='row'><div class='col-md-9' style='margin-top:10px'><ul class='list-group list-group-flush'><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://img.giaoduc.net.vn/Uploaded/2019/carwqyqdl/2018_06_19/bongda4.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://giaoduc.net.vn/Van-hoa/Giai-bong-da-Cup-Number-One-cua-nhung-nguoi-lam-bao-tai-Thu-do-Ha-Noi-post187253.gd'>Giải bóng đá "Cup Number One" của những người làm báo tại Thủ đô Hà Nội</a></h4><span>2019-06-18 16:17</span><br/><span class='d-none d-md-block'>(GDVN) - Giải đấu đầu tiên mang tên “Cup Number One” được tổ chức vào ngày 17/6 tại Hà Nội quy tụ gần 100 nhà báo, phóng viên, biên tập viên làm việc tại Thủ đô.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-10/aa--12--1547101293-width650height975.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/thoi-trang/1001-kieu-mac-cua-sao-viet-voi-mot-mong-nhu-to-946769.html'>1001 kiểu mặc của sao Việt với mốt mỏng như tờ</a></h4><span>2019-01-11 11:05</span><br/><span class='d-none d-md-block'>(Dân Việt) - Sao Việt càng gầy càng dễ chinh phục thiết kế xuyên thấu.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/dua-ten-lua-dan-dao-uy-luc-len-cao-nguyen-TQ-muon-diet-tau-My-o-Bien-dong-df-26-1547175036-width660height371.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/the-gioi/dua-ten-lua-dan-dao-uy-luc-len-cao-nguyen-tq-nham-diet-tau-my-o-bien-dong-946985.html'>Đưa tên lửa đạn đạo uy lực lên cao nguyên, TQ nhắm diệt tàu Mỹ ở Biển Đông?</a></h4><span>2019-01-11 11:05</span><br/><span class='d-none d-md-block'>(Dân Việt) Tàu chiến Mỹ và Trung Quốc năm 2018 đã có những màn rượt đuổi trên BIển Đông, nhưng động thái mới của Trung Quốc với tên lửa DF-26 cho thấy nước này muốn đánh chìm tàu chiến Mỹ hơn là xua đuổi.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/le-quyen-3-1547165125-width660height440.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/giai-tri/le-quyen-mac-co-khi-duoc-chong-dai-gia-hon-truoc-hang-tram-con-mat-946942.html'>Lệ Quyên mắc cỡ khi được chồng đại gia hôn trước hàng trăm con mắt</a></h4><span>2019-01-11 11:03</span><br/><span class='d-none d-md-block'>(Dân Việt) Nữ ca sĩ lấy hoa che mặt, đòi "trốn" vào hậu trường khi được chồng đại gia hôn bày tỏ tình cảm.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/dua-ten-lua-dan-dao-uy-luc-len-cao-nguyen-TQ-muon-diet-tau-My-o-Bien-dong-df-26-1547175036-width660height371.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/the-gioi/dua-ten-lua-dan-dao-uy-luc-len-cao-nguyen-tq-muon-diet-tau-my-o-bien-dong-946985.html'>Đưa tên lửa đạn đạo uy lực lên cao nguyên, TQ nhắm diệt tàu Mỹ ở Biển Đông?</a></h4><span>2019-01-11 11:03</span><br/><span class='d-none d-md-block'>(Dân Việt) Tàu chiến Mỹ và Trung Quốc năm 2018 đã có những màn rượt đuổi trên BIển Đông, nhưng động thái mới của Trung Quốc với tên lửa DF-26 cho thấy nước này muốn đánh chìm tàu chiến Mỹ hơn là xua đuổi.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Mai-dam-dong-tinh-nam-het-gia-2-trieu-dong-trong-tiem-Spa-o-Sai-Gon-1-1547178913-width1439height804.png' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/phap-luat/mai-dam-dong-tinh-nam-het-gia-2-trieu-dong-trong-tiem-spa-o-sai-gon-947017.html'>Mại dâm đồng tính nam hét giá 2 triệu đồng trong tiệm Spa ở Sài Gòn</a></h4><span>2019-01-11 11:01</span><br/><span class='d-none d-md-block'>Bước đầu, cả 2 đối tượng khai nhận muốn vào Spa Soi.9 phải mua vé với giá là 450 ngàn đồng. Nếu có nhu cầu vui vẻ tới bến thì tự thỏa thuận với mức giá là 2 triệu đồng/lượt/người.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Mai-dam-dong-tinh-nam-het-gia-2-trieu-dong-trong-tiem-Spa-o-Sai-Gon-1-1547178913-width1439height804.png' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/tin-tuc/mai-dam-dong-tinh-nam-het-gia-2-trieu-dong-trong-tiem-spa-o-sai-gon-947017.html'>Mại dâm đồng tính nam hét giá 2 triệu đồng trong tiệm Spa ở Sài Gòn</a></h4><span>2019-01-11 11:01</span><br/><span class='d-none d-md-block'>Bước đầu, cả 2 đối tượng khai nhận muốn vào Spa Soi.9 phải mua vé với giá là 450 ngàn đồng. Nếu có nhu cầu vui vẻ tới bến thì tự thỏa thuận với mức giá là 2 triệu đồng/lượt/người.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=https://image1.ictnews.vn/_Files/2019/01/11/iphone-usage-header-720x720.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=https://ictnews.vn/the-gioi-so/thu-thuat/7-cai-dat-nen-lam-tren-iphone-cua-con-de-de-be-quan-ly-177659.ict'>7 cài đặt nên làm trên iPhone của con để dễ bề quản lý</a></h4><span>2019-01-11 10:58</span><br/><span class='d-none d-md-block'>ictnews Nếu lo lắng con dùng iPhone quá nhiều hay xem nội dung không phù hợp, cha mẹ có thể ngăn chặn thông qua các thiết lập dưới đây.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=https://vnn-imgs-f.vgcloud.vn/2019/01/11/10/vu-nhom.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://vietnamnet.vn/vn/kinh-doanh/doanh-nhan/vu-nhom-da-lam-gi-voi-3-lo-dat-cong-san-thau-tom-o-tp-hcm-502024.html'>Vũ 'nhôm' đã làm gì với 3 lô đất công sản thâu tóm ở TP.HCM?</a></h4><span>2019-01-11 10:57</span><br/><span class='d-none d-md-block'>Ngoài 4 mảnh đất đắc địa ở Đà Nẵng, cựu thượng tá tình báo Phan Văn Anh Vũ (tức Vũ "nhôm") còn thâu tóm 3 lô khác ở TP.HCM có tổng diện tích hơn 5.800 m3. Mục đích giao đất ban đầu đều phục vụ hoạt động nghiệp vụ công an nhưng khi rơi vào tay Vũ, các lô đất công sản được chuyển hóa công năng thành cao ốc, khách sạn hoặc chuyển nhượng cho tư nhân.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=https://vnn-imgs-f.vgcloud.vn/2019/01/11/10/cong-an-vao-cuoc-viec-vo-nhot-chong-trong-cui-sat-suot-3-nam-3.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://vietnamnet.vn/vn/thoi-su/giai-cuu-nguoi-dan-ong-o-thanh-hoa-bi-vo-nhot-cui-sat-suot-3-nam-502013.html'>Giải cứu người đàn ông Thanh Hóa bị vợ nhốt cũi sắt suốt 3 năm</a></h4><span>2019-01-11 10:57</span><br/><span class='d-none d-md-block'>Thông tin từ công an huyện Thọ Xuân sáng nay cho biết, đơn vị này đang xác minh, điều tra thông tin người đàn ông bị nhốt trong cũi sắt suốt 3 năm qua.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://image.plo.vn/w653/Uploaded/2019/bivxpcwk/2019_01_11/diem-dem-qua-7_dwom.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://plo.vn/the-thao/trong-nuoc/jordan-viet-tiep-chuyen-than-ky-thai-lan-tim-lai-bau-troi-812469.html'>Jordan viết tiếp chuyện thần kỳ, Thái Lan ‘tìm lại bầu trời’</a></h4><span>2019-01-11 10:57</span><br/><span class='d-none d-md-block'>(PLO)-Đội bóng làng nhàng châu Á Jordan hạ gục hai ông lớn từng tranh suất World Cup 2018, còn Chanathip được trả lại vị trí sở trường đã tạo nên chiến thắng cho tuyển Thái Lan...</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://image.plo.vn/w653/Uploaded/2019/bivxpcwk/2019_01_11/diem-dem-qua-7_dwom.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://plo.vn/the-thao/trong-nuoc/jordan-viet-tiep-chuyen-than-ky-thai-lan-tim-lai-bau-troi-812470.html'>Jordan viết tiếp chuyện thần kỳ, Thái Lan ‘tìm lại bầu trời’</a></h4><span>2019-01-11 10:57</span><br/><span class='d-none d-md-block'>(PLO)-Đội bóng làng nhàng châu Á Jordan hạ gục hai ông lớn từng tranh suất World Cup 2018, còn Chanathip được trả lại vị trí sở trường đã tạo nên chiến thắng cho tuyển Thái Lan...</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://image.plo.vn/w653/Uploaded/2019/livotqmv/2019_01_11/benh-vien-fv_wdgt_thumb_thumb.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://plo.vn/phap-luat/benh-vien-fv-doi-benh-nhan-dang-facebook-boi-thuong-13-ti-812481.html'>Bệnh viện FV 'đòi' bệnh nhân đăng facebook bồi thường 1,3 tỉ</a></h4><span>2019-01-11 10:57</span><br/><span class='d-none d-md-block'>(PLO)- TAND quận 7, TP.HCM vừa thụ lý vụ kiện đòi bồi thường thiệt hại giữa Công ty TNHH Y Tế Viễn Đông Việt Nam (Bệnh viện FV) có chi nhánh tại Quận 7, TP.HCM với bà C. (bệnh nhân ngụ TP.HCM).</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://image.plo.vn/w653/Uploaded/2019/yqdxwpwjv/2019_01_11/ma-tuy.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://plo.vn/an-ninh-trat-tu/ho-so-pha-an/bat-nguoi-tinh-cua-tuan-bong-ma-cung-so-ma-tuy-da-lon-812477.html'>Bắt người tình của Tuân 'bóng ma' cùng số ma túy đá lớn</a></h4><span>2019-01-11 10:56</span><br/><span class='d-none d-md-block'>(PLO)- Sau khi Tuân “bóng ma’ bị bắt, Xuân đã dựa trên các mối quan hệ của người tình để thiết lập đường dây mua bán ma túy đá.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://image.plo.vn/w653/Uploaded/2019/yqdxwpwjv/2019_01_11/ma-tuy.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://plo.vn/an-ninh-trat-tu/ho-so-pha-an/bat-nguoi-tinh-cua-tuan-bong-ma-cung-so-ma-tuy-da-lon-812478.html'>Bắt người tình của Tuân 'bóng ma' cùng số ma túy đá lớn</a></h4><span>2019-01-11 10:56</span><br/><span class='d-none d-md-block'>(PLO)- Sau khi Tuân “bóng ma’ bị bắt, Xuân đã dựa trên các mối quan hệ của người tình để thiết lập đường dây mua bán ma túy đá.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=https://image.giaoducthoidai.vn/Uploaded/thuyvt/2019-01-11/10/a2-JZJI.JPG?width=1000' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://giaoducthoidai.vn/giao-duc/hai-phuong-an-quy-dinh-triet-ly-giao-duc-3975384-b.html'>Hai phương án quy định triết lý giáo dục</a></h4><span>2019-01-11 10:56</span><br/><span class='d-none d-md-block'>GD&TĐ - Không nên có điều riêng về triết lý GD trong Luật. Đó là ý kiến của nhiều chuyên gia, nhà khoa học khi góp ý dự thảo Luật GD (sửa đổi), tại Hội thảo do Liên hiệp Các hội khoa học và kĩ thuật Việt Nam phối hợp với Bộ GD&ĐT tổ chức mới đây.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Xuat-hien-ho-tu-than-giua-quoc-lo-12B-49898531_293642191228456_7420259686986809344_n-1547173705-width903height678.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/xa-hoi/ho-sau-nhu-gieng-xuat-hien-giua-quoc-lo-12b-946993.html'>Hố sâu như giếng xuất hiện giữa quốc lộ 12B</a></h4><span>2019-01-11 10:55</span><br/><span class='d-none d-md-block'>(Dân Việt) Một cái hố rộng 1,5m, sâu cả chục mét bỗng xuất hiện trên quốc lộ 12B, thuộc xóm Tân Tiến, xã Thanh Hối, huyện Tân Lạc, tỉnh Hòa Bình. Cơ quan chức năng của tỉnh Hòa Bình đang tiến hành đổ đất lấp hố này để tránh nguy hiểm cho các phương tiện giao thông qua đây.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Lai-mot-be-trai-dang-thuong-bi-o-to-tong-tu-vong-roi-bo-tron-1-1547177850-width660height430.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/xa-hoi/lai-mot-be-trai-dang-thuong-bi-o-to-tong-tu-vong-roi-bo-tron-947004.html'>Lại một bé trai đáng thương bị ô tô tông tử vong rồi bỏ trốn</a></h4><span>2019-01-11 10:55</span><br/><span class='d-none d-md-block'>Sau khi đưa em gái vào lớp, trên đường đi xe đạp từ trường tiểu học đến trường THCS, nam sinh lớp 7 đã bị ô tô đâm trúng rồi kéo lê một đoạn dẫn đến tử vong.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/BIDV---Ngan-hang-Ban-le-tot-nhat-Viet-Nam-5-nam-lien-tiep-1-1547178258-width640height376.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/doanh-nghiep/bidv-ngan-hang-ban-le-tot-nhat-viet-nam-5-nam-lien-tiep-947010.html'>BIDV - “Ngân hàng Bán lẻ tốt nhất Việt Nam” 5 năm liên tiếp</a></h4><span>2019-01-11 10:53</span><br/><span class='d-none d-md-block'>(Dân Việt) Với hơn 100 sản phẩm, dịch vụ mang hàm lượng công nghệ cao, tiện ích vượt trội dành cho khách hàng cá nhân, Ngân hàng TMCP Đầu tư và Phát triển Việt Nam (BIDV) vừa nhận giải thưởng “Ngân hàng Bán lẻ tốt nhất Việt Nam” lần thứ năm liên tiếp do The Asian Banker trao tặng tại Hội nghị Triển vọng ngành dịch vụ Ngân hàng - Tài chính năm 2019 tổ chức tại Hà nội ngày 10.1.2019.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/BIDV---Ngan-hang-Ban-le-tot-nhat-Viet-Nam-5-nam-lien-tiep-1-1547178258-width640height376.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/kinh-te/bidv-ngan-hang-ban-le-tot-nhat-viet-nam-5-nam-lien-tiep-947010.html'>BIDV - “Ngân hàng Bán lẻ tốt nhất Việt Nam” 5 năm liên tiếp</a></h4><span>2019-01-11 10:52</span><br/><span class='d-none d-md-block'>(Dân Việt) Với hơn 100 sản phẩm, dịch vụ mang hàm lượng công nghệ cao, tiện ích vượt trội dành cho khách hàng cá nhân, Ngân hàng TMCP Đầu tư và Phát triển Việt Nam (BIDV) vừa nhận giải thưởng “Ngân hàng Bán lẻ tốt nhất Việt Nam” lần thứ năm liên tiếp do The Asian Banker trao tặng tại Hội nghị Triển vọng ngành dịch vụ Ngân hàng - Tài chính năm 2019 tổ chức tại Hà nội ngày 10.1.2019.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Sua-dien-thoai-de-lo-clip-nhay-cam-co-gai-tre-bi-tong-tien-tong-tien-sex-1547178337-width700height467.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/phap-luat/de-lo-clip-nhay-cam-khi-sua-dien-thoai-co-gai-tre-bi-tong-tien-947014.html'>Để lộ clip nhạy cảm khi sửa điện thoại, cô gái trẻ bị tống tiền</a></h4><span>2019-01-11 10:52</span><br/><span class='d-none d-md-block'>Đầu tháng 12-2018, một cô gái trẻ ở Hà Nội mang điện thoại di động cá nhân đi sửa, yêu cầu cài đặt phần mềm, sao lưu dữ liệu. Trong quá trình xử lý cho khách, nam kỹ thuật viên đã phát hiện các clip nhạy cảm của cô gái, nên lén lút sao chép, sau đó quay ra tống tiền nạn nhân. Công an Thành phố Hà Nội đã kịp thời bắt giữ đối tượng này, sau khi y nhiều lần đe dọa, chiếm đoạt tài sản của cô gái trẻ.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Sua-dien-thoai-de-lo-clip-nhay-cam-co-gai-tre-bi-tong-tien-tong-tien-sex-1547178337-width700height467.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/tin-tuc/de-lo-clip-nhay-cam-khi-sua-dien-thoai-co-gai-tre-bi-tong-tien-947014.html'>Để lộ clip nhạy cảm khi sửa điện thoại, cô gái trẻ bị tống tiền</a></h4><span>2019-01-11 10:52</span><br/><span class='d-none d-md-block'>Đầu tháng 12-2018, một cô gái trẻ ở Hà Nội mang điện thoại di động cá nhân đi sửa, yêu cầu cài đặt phần mềm, sao lưu dữ liệu. Trong quá trình xử lý cho khách, nam kỹ thuật viên đã phát hiện các clip nhạy cảm của cô gái, nên lén lút sao chép, sau đó quay ra tống tiền nạn nhân. Công an Thành phố Hà Nội đã kịp thời bắt giữ đối tượng này, sau khi y nhiều lần đe dọa, chiếm đoạt tài sản của cô gái trẻ.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Sua-dien-thoai-de-lo-clip-nhay-cam-co-gai-tre-bi-tong-tien-tong-tien-sex-1547178337-width700height467.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/video-anh/de-lo-clip-nhay-cam-khi-sua-dien-thoai-co-gai-tre-bi-tong-tien-947014.html'>Để lộ clip nhạy cảm khi sửa điện thoại, cô gái trẻ bị tống tiền</a></h4><span>2019-01-11 10:52</span><br/><span class='d-none d-md-block'>Đầu tháng 12-2018, một cô gái trẻ ở Hà Nội mang điện thoại di động cá nhân đi sửa, yêu cầu cài đặt phần mềm, sao lưu dữ liệu. Trong quá trình xử lý cho khách, nam kỹ thuật viên đã phát hiện các clip nhạy cảm của cô gái, nên lén lút sao chép, sau đó quay ra tống tiền nạn nhân. Công an Thành phố Hà Nội đã kịp thời bắt giữ đối tượng này, sau khi y nhiều lần đe dọa, chiếm đoạt tài sản của cô gái trẻ.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://img.daidoanket.vn/images/fullsize/2019/01/11/tet-nay-khong-lo-xep-hang-de-rut-tien-tai-cay-atm.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://daidoanket.vn/san-pham-so/tet-nay-khong-lo-xep-hang-de-rut-tien-tai-cay-atm-tintuc427400'>Tết này không lo xếp hàng để rút tiền tại cây ATM</a></h4><span>2019-01-11 10:50</span><br/><span class='d-none d-md-block'>Để chuẩn bị cho dịp Tết Âm lịch Kỷ Hợi 2019, Ngân hàng số của người Việt ViettelPay đã chính thức triển khai gần 200.000 điểm giao dịch phủ khắp 63 tỉnh/thành, phục vụ nhu cầu nạp/rút tiền mặt, thanh toán tài chính cho mọi người dân.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://img.daidoanket.vn/images/fullsize/2019/01/11/viet-nam-nam-trong-2-dia-diem-cuoi-cung-duoc-can-nhac-cho-cuoc-gap-trump-kim.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://daidoanket.vn/tin-tuc/viet-nam-nam-trong-2-dia-diem-cuoi-cung-duoc-can-nhac-cho-cuoc-gap-trump-kim-tintuc427399'>Việt Nam nằm trong 2 địa điểm cuối cùng được cân nhắc cho cuộc gặp Trump-Kim</a></h4><span>2019-01-11 10:48</span><br/><span class='d-none d-md-block'>Việt Nam dường như là một trong hai địa điểm cuối cùng được cân nhắc trở thành nơi diễn ra hội nghị thượng đỉnh Mỹ-Triều Tiên lần hai giữa Tổng thống Donald Trump và nhà lãnh đạo Kim Jong-un trong thời gian tới, báo Koreal Heral dẫn lời giới chức Bộ Ngoại giao Hàn Quốc cho biết ngày 10/1.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=https://vnn-imgs-f.vgcloud.vn/2019/01/11/10/nhiet-do-giam-sau-chau-au-bien-thanh-dia-nguc-bang-gia-5.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://vietnamnet.vn/vn/the-gioi/nhiet-do-giam-sau-chau-au-bien-thanh-dia-nguc-bang-gia-502011.html'>Châu Âu biến thành 'địa ngục băng giá'</a></h4><span>2019-01-11 10:47</span><br/><span class='d-none d-md-block'>Tại thị trấn Hohentauern, Áo, có khoảng 2.000 người đã bị mắc kẹt khi lớp tuyết dày gần 1m xuất hiện vào ban đêm và phủ kín các con đường, tờ Bild đưa tin.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=https://vnn-imgs-f.vgcloud.vn/2019/01/11/10/viet-nam-bao-iran.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://vietnamnet.vn/vn/the-thao/bong-da-viet-nam/viet-nam-dau-iran-bao-iran-canh-bao-tuyen-viet-nam-rat-nguy-hiem-502020.html'>Báo Iran: "Đừng đùa, tuyển Việt Nam rất đáng sợ!"</a></h4><span>2019-01-11 10:47</span><br/><span class='d-none d-md-block'>Ngay sau khi bảng D Asian Cup kết thúc lượt trận đầu tiên, các hãng cá cược hợp pháp ở châu Á đã đưa ra tỷ lệ mới dành cho đội tuyển Iran.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://image.plo.vn/w653/Uploaded/2019/abxbflu/2019_01_11/zimbabwe_ebai_thumb.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://plo.vn/quoc-te/su-kien/cuu-tong-thong-zimbabwe-bi-trom-1-va-li-chua-day-tien-812475.html'>Cựu Tổng thống Zimbabwe bị trộm 1 va li chứa đầy tiền</a></h4><span>2019-01-11 10:47</span><br/><span class='d-none d-md-block'>(PLO)- Những tên trộm đã dùng số tiền lấy được để mua nhà cửa, xe hơi và vật nuôi.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://image.plo.vn/w653/Uploaded/2019/cqjwqcdwp/2018_12_25/14-nga_ncvj.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://plo.vn/quoc-te/2018-ai-thang-ai-thua-tren-chien-truong-syria-809838.html'>2018, ai thắng ai thua trên chiến trường Syria?</a></h4><span>2019-01-11 10:47</span><br/><span class='d-none d-md-block'>(PL)- Bên thảm bại là phe nổi dậy, lực lượng tay súng người Kurd và cả Mỹ. Chiến thắng vẻ vang thuộc về Nga và Tổng thống Syria Assad.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://image.plo.vn/w653/Uploaded/2019/abxbflu/2019_01_11/zimbabwe_ebai_thumb.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://plo.vn/quoc-te/su-kien/cuu-tong-thong-zimbabwe-bi-trom-1-va-li-chua-day-tien-812476.html'>Cựu Tổng thống Zimbabwe bị trộm 1 va li chứa đầy tiền</a></h4><span>2019-01-11 10:47</span><br/><span class='d-none d-md-block'>(PLO)- Những tên trộm đã dùng số tiền lấy được để mua nhà cửa, xe hơi và vật nuôi.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=https://kenh14cdn.com/zoom/600_315/2019/1/11/facebook-avatar-15471542177342073322696-crop-15471542440931944747508.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://kenh14.vn/wechoice-awards-hanh-trinh-dep-de-tu-nhung-giac-mo-20190111085719725.chn'>WeChoice Awards: Hành trình đẹp đẽ từ những giấc mơ</a></h4><span>2019-01-11 10:46</span><br/><span class='d-none d-md-block'>12h đêm trước Gala WeChoice, trong căn phòng nhỏ của BTC, tổng đạo diễn của chương trình - anh Việt Tú, vẫn đang đi vòng quanh dặn dò trợ lý của mình những bước cuối cùng trong chương trình ngày mai. Anh hẹn sẽ đọc lại kịch bản MC khi về khách sạn. Khi những tiết mục duyệt của ngày hôm đấy xong xuôi, cả khu SECC chìm vào một</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://baochinhphu.vn//Uploaded/hatheluc/2019_01_11/antd-xe_con_ui_xe_may.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://baochinhphu.vn/Doi-song/De-khong-con-nguoi-chet-khi-cho-den-do/356705.vgp'>Để không còn người chết khi chờ đèn đỏ</a></h4><span>2019-01-11 10:46</span><br/><span class='d-none d-md-block'>(Chinhphu.vn) - Trong thời gian gần đây, đã liên tiếp xảy ra những vụ tai nạn giao nghiêm trọng gây thiệt hại lớn về người và của và chủ yếu do ô tô gây ra.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://img.daidoanket.vn/images/fullsize/2019/01/11/an-giang15-nam-tu-cho-ke-hiep-dam-con-nuoi.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://daidoanket.vn/antt/an-giang15-nam-tu-cho-ke-hiep-dam-con-nuoi-tintuc427398'>An Giang: 15 năm tù cho kẻ hiếp dâm con nuôi</a></h4><span>2019-01-11 10:46</span><br/><span class='d-none d-md-block'>Tại phiên tòa xét xử sơ thẩm sáng ngày 10/1, Tòa án nhân dân tỉnh An Giang đã tuyên phạt bị cáo Nguyễn Tấn Tòng, sinh năm 1980, trú tại xã Vĩnh Trạch, huyện Thoại Sơn, An Giang, 15 năm tù giam về tội “Hiếp dâm người dưới 16 tuổi”.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Tong-giam-doc-Tap-doan-Novaland-Novaland-dam-bao-100-quyen-loi-khach-hang-cac-du-an-giao-dich-binh-t--ng-b--i-xugn-huy-1547177588-width640height960.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/doanh-nghiep/tong-giam-doc-tap-doan-novaland-novaland-dam-bao-100-quyen-loi-khach-hang-cac-du-an-giao-dich-binh-thuong-947002.html'>Tổng giám đốc Tập đoàn Novaland: “Novaland đảm bảo 100% quyền lợi khách hàng, các dự án giao dịch bình thường”</a></h4><span>2019-01-11 10:43</span><br/><span class='d-none d-md-block'>(Dân Việt) Những ngày qua, thông tin 7 dự án ở quận Phú Nhuận, TP.HCM do Tập đoàn Novaland phát triển bị tạm dừng thực hiện việc chuyển mục đích sử dụng đất ở đã khiến cho nhiều khách hàng và các nhà đầu tư hoang mang, lo lắng. Chúng tôi đã có cuộc trao đổi với ông Bùi Xuân Huy, Tổng Giám đốc Tập đoàn Novaland để hiểu rõ thông tin về sự việc này.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Ha-Kieu-Anh-chia-se-ve-cuu-nguoi-mau-Thuy-Huong-49682678_10157003310889901_6082945448132214784_n-1547177698-width955height960.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/song-tre/ha-kieu-anh-chia-se-ve-cuu-nguoi-mau-thuy-huong-co-hanh-phuc-nao-tren-troi-roi-xuong-947006.html'>Hà Kiều Anh chia sẻ về cựu người mẫu Thủy Hương: "Có hạnh phúc nào trên trời rơi xuống?"</a></h4><span>2019-01-11 10:42</span><br/><span class='d-none d-md-block'>(Dân Việt) Tâm sự của Hoa hậu Hà Kiều Anh về cựu người mẫu Thủy Hương - người từng được coi là tuyệt sắc giai nhân trong làng mẫu Việt khiến nhiều người chú ý.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Ha-Kieu-Anh-chia-se-ve-cuu-nguoi-mau-Thuy-Huong-49682678_10157003310889901_6082945448132214784_n-1547177698-width955height960.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/van-hoa/ha-kieu-anh-chia-se-ve-cuu-nguoi-mau-thuy-huong-co-hanh-phuc-nao-tren-troi-roi-xuong-947006.html'>Hà Kiều Anh chia sẻ về cựu người mẫu Thủy Hương: "Có hạnh phúc nào trên trời rơi xuống?"</a></h4><span>2019-01-11 10:41</span><br/><span class='d-none d-md-block'>(Dân Việt) Tâm sự của Hoa hậu Hà Kiều Anh về cựu người mẫu Thủy Hương - người từng được coi là tuyệt sắc giai nhân trong làng mẫu Việt khiến nhiều người chú ý.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://streaming1.danviet.vn/upload/1-2019/images/2019-01-11/Lai-mot-be-trai-dang-thuong-bi-o-to-tong-tu-vong-roi-bo-tron-1-1547177850-width660height430.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://danviet.vn/tin-tuc/lai-mot-be-trai-dang-thuong-bi-o-to-tong-tu-vong-roi-bo-tron-947004.html'>Lại một bé trai đáng thương bị ô tô tông tử vong rồi bỏ trốn</a></h4><span>2019-01-11 10:41</span><br/><span class='d-none d-md-block'>Sau khi đưa em gái vào lớp, trên đường đi xe đạp từ trường tiểu học đến trường THCS, nam sinh lớp 7 đã bị ô tô đâm trúng rồi kéo lê một đoạn dẫn đến tử vong.</span></div></div></li><li class='list-group-item' style='padding-left: 0'><div class='media row'><div class='col-md-4 col-12' ><img src='//images.weserv.nl/?url=http://baochinhphu.vn//Uploaded/buithuhuong/2019_01_11/ba%20hom.jpg' data-holder-rendered='true' style='background-position: center; background-size: cover; width:100% '/></div><div class='col-md-8 col-12'><h4 class='mt-0'><a target='_blank' class='text-dark' style='text-decoration: none;' href='https://phamduytung.com/news/redirect.html?c=http://baochinhphu.vn/Doi-song/TPHCM-trien-khai-70-cong-trinh-giao-thong-trong-nam-2019/356699.vgp'>TPHCM triển khai 70 công trình giao thông trong năm 2019</a></h4><span>2019-01-11 10:40</span><br/><span class='d-none d-md-block'>(Chinhphu.vn) - Nhằm tiếp tục thực hiện chương trình giảm ùn tắc giao thông, giảm tai nạn giao thông, năm 2019 Sở GTVT TPHCM sẽ triển khai khoảng 70 dự án giao thông đường bộ, trong đó có 45 dự án nâng cấp mở rộng làm mới đường và 23 dự án xây dựng cầu.</span></div></div></li></ul></div></div>
-                </div>
-            </div>
-            <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
-            <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
-            <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
-            <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
-            <script type="edd71ee392f14e0fd5253fc8-text/javascript">hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
-            <script src="/js/util.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
-            <script src="/js/main.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
-            <script type="edd71ee392f14e0fd5253fc8-text/javascript">hljs.initHighlightingOnLoad();</script>
-            <script src="//yihui.name/js/math-code.js" type="edd71ee392f14e0fd5253fc8-text/javascript"></script>
-            <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" type="edd71ee392f14e0fd5253fc8-text/javascript">
-            </script>
-        
-<script type="text/javascript">
-    var ouo_token = 'LTaSOTZp';
-    var exclude_domains = ['phamduytung.com']; 
-</script>
-<script src="//cdn.ouo.io/js/full-page-script.js"></script>           
-		   </body>
-        </html>
-        
+</body>
+  </html>
