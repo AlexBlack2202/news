@@ -349,7 +349,7 @@ Kinh Doanh </span></a>
                 </ul>
 
 <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
+  <ul class="pagination justify-content-center" id ="pagination_page">
    
     <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',1);">1</a></li>
     <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',2);">2</a></li>
@@ -538,6 +538,25 @@ Kinh Doanh </span></a>
             }
         $(document).ready(function(){
             
+            var btnContainer = document.getElementById("pagination_page");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("page-item");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) { 
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+}
 
             getcontent();
         });
