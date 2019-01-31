@@ -203,7 +203,7 @@ Văn Hoá </span></a>
                             <span style="position:relative; top:2px;">     
 Sức Khoẻ </span></a>  </li>
  <li class="nav-item">
-  <a class="nav-link" href="#" style="position:relative;" onclick="getcontent('khohoc.json');">
+  <a class="nav-link" href="#" style="position:relative;" onclick="getcontent('khoahoc.json');">
                             <svg class="color-light" width="24" height="24"
                                 xmlns="http://www.w3.org/2000/svg"><path
                                     d="M11.143
@@ -217,7 +217,7 @@ Sức Khoẻ </span></a>  </li>
                             <span style="position:relative; top:2px;">     
 Khoa Học </span></a>  </li>
  <li class="nav-item">
-  <a class="nav-link" href="#" style="position:relative;" onclick="getcontent('chinhtri.json');">
+  <a class="nav-link" href="#" style="position:relative;" onclick="getcontent('chinhtrixahoi.json');">
                             <svg class="color-light" width="24" height="24"
                                 xmlns="http://www.w3.org/2000/svg"><path
                                     d="M11.143
@@ -479,8 +479,7 @@ Kinh Doanh </span></a>
     <script src="js/jquery-3.3.1.min.js"  data-cfasync="false"></script>
     <script src="js/bootstrap.min.js"  data-cfasync="false"></script>
     <script type="text/javascript"  data-cfasync="false">
-        $(document).ready(function(){
-            function getcontent(file_name){
+    function getcontent(file_name){
 $("#news-contents").html('');
                 if(file_name === null || file_name ==='' || file_name==='undefined'|| file_name===undefined){
                     file_name="trangchu.json";
@@ -498,6 +497,8 @@ $("#news-contents").html('');
              
                 });
             }
+        $(document).ready(function(){
+            
 
             getcontent();
         });
