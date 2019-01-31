@@ -494,11 +494,12 @@ Kinh Doanh </span></a>
     <script src="js/bootstrap.min.js"  data-cfasync="false"></script>
     <script type="text/javascript"  data-cfasync="false">
     function getcontent(file_name){
-$("#news-contents").html('');
+
                 if(file_name === null || file_name ==='' || file_name==='undefined'|| file_name===undefined){
                     file_name="trangchu.json";
                 }
                 $.getJSON("news_data/"+file_name, function(data) {
+                    $("#news-contents").html('');
                     $.each(data.items, function(i, f) {
                         let head = f.head;
                         let img = f.img;
