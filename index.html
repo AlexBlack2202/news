@@ -116,7 +116,21 @@ footer.page-footer .footer-copyright {
 }
 
 div.adv-sub{
-    background-color:white;
+   padding-top:10px;
+}
+
+div.adv-sub img{
+   width: 100%;
+}
+
+div.adv-sub a{
+   margin-top:10px;
+   display:block;
+}
+div.advertisement img{
+    max-height: 135px; margin: auto; width: 100%;
+        background-position: center;
+    background-size: cover;
 }
 </style>
 </head>
@@ -288,9 +302,8 @@ Kinh Doanh </span></a>
   <div class="advertisement" style="height:155px; text-align:center;
         padding-top:10px;">
         <main class="container">
-        <img
-            src="https://static.accesstrade.vn/publisher/www/files/img_promo/offer/img/nguyenkimvn/nguyenkim_03.01_3.jpg"
-            style="max-height: 135px; margin: auto; width: 100%;" alt="Quảng cáo">
+       <a href="https://pub.accesstrade.vn/deep_link/4814277752595102212?url=http%3A%2F%2Fcareerbuilder.vn%2Fviec-lam%2Fha-noi-l4-vi.html"> <img src="https://s3-ap-southeast-1.amazonaws.com/images.accesstrade.vn/68d30a9594728bc39aa24be94b319d21/3818_CB_acess_bn_1200x120_20160517034923382.jpg"/> </a>
+       
             </main>
     </div>
    
@@ -298,6 +311,8 @@ Kinh Doanh </span></a>
         <div class="row">
             <div class="col-md-3 adv">
                 <div class="adv-sub">
+                <a href="https://pub.accesstrade.vn/deep_link/4814277752595102212?url=https%3A%2F%2Fthefaceshop.com.vn%2F"> <img src="https://s3-ap-southeast-1.amazonaws.com/images.accesstrade.vn/7a614fd06c325499f1680b9896beedeb/7844_banner_silder_2_20171127065133480.jpg"/> </a>
+                <a href="https://shorten.asia/5S3UJe6p"><img src='https://product.hstatic.net/1000003969/product/xanh_txt176_1_1024x1024.jpg'/>
                 </div>
             </div>
             <div class="col-md-9" style="background-color:white; padding:0;">
@@ -490,7 +505,7 @@ $("#news-contents").html('');
                         let desc= f.desc;
                         let times = f.times;
                         let links = f.links;
-                       var tblRow = "<li class='news-item'> <a href='"+links+"' class='text-und'> <div> <div class='img-news float-left'> <img class='img-news' data-src='holder.js/200x250?theme=thumb' alt='' src='"+img+"' data-holder-rendered='true'/> </div><div class='news-content'> <h3 class='news-tittle'> "+head+" </h3> <p class='news-desc'>"+desc+"</p><div class='news-times'>"+times+"</div></div><div class='clearfix'></div></div></a> </li>";
+                       var tblRow = "<li class='news-item'> <a target='_blank' href='"+links+"' class='text-und'> <div> <div class='img-news float-left'> <img class='img-news' data-src='holder.js/200x250?theme=thumb' alt='' src='"+img+"' data-holder-rendered='true'/> </div><div class='news-content'> <h3 class='news-tittle'> "+head+" </h3> <p class='news-desc'>"+desc+"</p><div class='news-times'>"+times+"</div></div><div class='clearfix'></div></div></a> </li>";
                         $(tblRow).appendTo("#news-contents");
                   });
              
