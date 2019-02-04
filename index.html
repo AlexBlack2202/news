@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+ <link rel="preload" href="news_data/1_trangchu.json" as="fetch"  data-cfasync="false">
     <style>
 body {
     background: #f7f7f7;
@@ -140,7 +140,7 @@ div.advertisement img{
 </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md" style="background: #8c0014;color: hsla(0,0%,100%,1);">
+   <!-- <nav class="navbar navbar-expand-md" style="background: #8c0014;color: hsla(0,0%,100%,1);">
         <img
             src="logo.png"
             alt="Tết tinh tế 2019" width="50" class="jsx-4103438783 imgLogo" style="margin-left:20px;">
@@ -159,7 +159,7 @@ div.advertisement img{
 
         </div>
     </nav>
-
+-->
     <div class="navbar navbar-expand-md navbar-danger" style="background:
         #790014;color: hsla(0,0%,100%,1);">
         <main class="container">
@@ -348,6 +348,21 @@ Kinh Doanh </span></a>
                     </li>
                 </ul>
 
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center pagination-lg" id ="pagination_page">
+   
+    <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',1);">1</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',2);">2</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',3);">3</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',4);">4</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',5);">5</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',6);">6</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',7);">7</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',8);">8</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',9);">9</a></li>
+   
+  </ul>
+</nav>
             </div>
         </div>
 
@@ -497,11 +512,16 @@ Kinh Doanh </span></a>
     <script src="js/jquery-3.3.1.min.js"  data-cfasync="false"></script>
     <script src="js/bootstrap.min.js"  data-cfasync="false"></script>
     <script type="text/javascript"  data-cfasync="false">
-    function getcontent(file_name){
+
+    var cur_file_name = "trangchu.json"
+    function getcontent(file_name='',cur_index=1){
 
                 if(file_name === null || file_name ==='' || file_name==='undefined'|| file_name===undefined){
-                    file_name="trangchu.json";
+                    file_name=cur_file_name;
+                }else{
+                    cur_file_name = file_name;
                 }
+                file_name = cur_index+"_"+file_name;
                 $.getJSON("news_data/"+file_name, function(data) {
                     $("#news-contents").html('');
                     $.each(data.items, function(i, f) {
@@ -518,6 +538,25 @@ Kinh Doanh </span></a>
             }
         $(document).ready(function(){
             
+            var btnContainer = document.getElementById("pagination_page");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("page-item");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) { 
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+}
 
             getcontent();
         });
@@ -536,5 +575,7 @@ Kinh Doanh </span></a>
                 ga('send', 'pageview');
             }
             </script>
+           
+        
 </body>
   </html>
