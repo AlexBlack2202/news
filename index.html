@@ -348,10 +348,9 @@ Kinh Doanh </span></a>
                     </li>-->
                 </ul>
 
-<nav aria-label="Page navigation example">
-<div class="row text-center">
-        <div class="col-md-2 offset-5"><button class="btn btn-outline-danger" style="
-    margin-bottom: 10px;" onclick="getcontent('',-1);">Xem thêm    </button></div>
+<nav>
+<div class="row" id="view_more">
+        <div class="col-md-2 offset-5"><button class="btn btn-outline-danger" style="margin-bottom: 10px;" onclick="getcontent('',-1);">Xem thêm    </button></div>
 
     </div>
   <!--<ul class="pagination justify-content-center pagination-lg" id ="pagination_page">
@@ -520,7 +519,7 @@ Kinh Doanh </span></a>
 
     var cur_file_name = "trangchu.json"
     var old_index = 1;
-    function getcontent(file_name='',cur_index=1){
+    function getcontent(file_name='',cur_index=-1){
 
                 if(file_name === null || file_name ==='' || file_name==='undefined'|| file_name===undefined){
                     file_name=cur_file_name;
@@ -536,9 +535,15 @@ if(cur_index == -1){
     cur_index = old_index;
 }
 
+if(cur_index<9){
+    $("#view_more").show();
+}else{
+    $("#view_more").hide();
+}
+
                 file_name = cur_index+"_"+file_name;
                 $.getJSON("news_data/"+file_name, function(data) {
-                    $("#news-contents").html('');
+                    /*$("#news-contents").html('');*/
                     $.each(data.items, function(i, f) {
                         let head = f.head;
                         let img = f.img;
