@@ -544,7 +544,9 @@ if(cur_index<9){
 
                 file_name = cur_index+"_"+file_name;
                 $.getJSON("news_data/"+file_name, function(data) {
-                    /*$("#news-contents").html('');*/
+                    if(cur_index<=1){
+                    $("#news-contents").html('');
+                    }
                     $.each(data.items, function(i, f) {
                         let head = f.head;
                         let img = f.img;
