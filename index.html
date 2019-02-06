@@ -321,7 +321,7 @@ Kinh Doanh </span></a>
             </div>
             <div class="col-md-9" style="background-color:white; padding:0;">
                 <ul class="list-unstyled" id="news-contents">
-                    <li class="news-item">
+                  <!--  <li class="news-item">
                         <a href="#" class="text-und">
                             <div>
                                 <div class="img-news float-left">
@@ -345,11 +345,16 @@ Kinh Doanh </span></a>
                                 <div class="clearfix"></div>
                             </div>
                         </a>
-                    </li>
+                    </li>-->
                 </ul>
 
 <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center pagination-lg" id ="pagination_page">
+<div class="row text-center">
+        <div class="col-md-2 offset-5"><button class="btn btn-outline-danger" style="
+    margin-bottom: 10px;" onclick="getcontent('',-1);">Xem thêm    </button></div>
+
+    </div>
+  <!--<ul class="pagination justify-content-center pagination-lg" id ="pagination_page">
    
     <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',1);">1</a></li>
     <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',2);">2</a></li>
@@ -361,7 +366,7 @@ Kinh Doanh </span></a>
     <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',8);">8</a></li>
     <li class="page-item"><a class="page-link" href="#" onclick="getcontent('',9);">9</a></li>
    
-  </ul>
+  </ul>-->
 </nav>
             </div>
         </div>
@@ -514,13 +519,23 @@ Kinh Doanh </span></a>
     <script type="text/javascript"  data-cfasync="false">
 
     var cur_file_name = "trangchu.json"
+    var old_index = -1;
     function getcontent(file_name='',cur_index=1){
 
                 if(file_name === null || file_name ==='' || file_name==='undefined'|| file_name===undefined){
                     file_name=cur_file_name;
                 }else{
+                    //reset index and file name
                     cur_file_name = file_name;
+                    cur_index = 1;
+                    old_index = 1
                 }
+
+if(cur_index == -1){
+    old_index = old_index + 1;
+    cur_index = old_index;
+}
+
                 file_name = cur_index+"_"+file_name;
                 $.getJSON("news_data/"+file_name, function(data) {
                     $("#news-contents").html('');
