@@ -553,7 +553,9 @@ if(cur_index<9){
                        var tblRow = "<li class='news-item'> <a target='_blank' href='"+links+"' class='text-und'> <div class='row'> <div class='img-news col-md-3'> <img class='img-news lazy' alt='' data-src='"+img+"' data-holder-rendered='true'/> </div><div class='news-content col-md-9'> <h3 class='news-tittle'> "+head+" </h3> <p class='news-desc'>"+desc+"</p><div class='news-times'>"+times+"</div></div><div class='clearfix'></div></div></a> </li>";
                         $(tblRow).appendTo("#news-contents");
                   });
-             
+             var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
                 });
             }
         $(document).ready(function(){
